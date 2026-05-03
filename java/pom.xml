@@ -17,7 +17,7 @@
 
     <build>
         <plugins>
-            <!-- fat jar plugin — bundles everything into one runnable jar -->
+            <!-- fat jar plugin - bundles everything into one runnable jar -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-assembly-plugin</artifactId>
@@ -43,7 +43,7 @@
         </plugins>
     </build>
 
-    <!-- No Spring, no frameworks — pure Java to keep the comparison honest -->
+    <!-- No Spring, no frameworks - pure Java to keep the comparison honest -->
     <!-- If you wanted an HTTP layer you'd add Spring Boot here and watch -->
     <!-- the jar balloon from ~80KB to ~20MB -->
 
