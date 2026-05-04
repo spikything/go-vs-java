@@ -1,13 +1,15 @@
 # Go vs Java
 
-A basic fake stock tracking CLI application, written in both Java ans Go, to compare to two for simplicity, concurrency performance, memory efficiency, etc.
+A basic fake stock tracking CLI application, written in both **Java** and **Go**, to compare each for simplicity, concurrency performance, memory efficiency, start-up time, etc.
+
+<img width="520" height="344" alt="stock-risk-monitor" src="https://github.com/user-attachments/assets/20e610ab-c39f-4b05-a19f-cae70b797f89" />
 
 ## What it does
 
 - Simulates live price movement for a 5-stock portfolio using geometric Brownian motion (simplified Black-Scholes noise)
-- Monitors each ticker concurrently - one goroutine/thread per ticker
+- Monitors each ticker concurrently (one goroutine/thread per ticker)
 - Fires drawdown alerts when a position drops below its configured threshold
-- Renders a live-updating terminal dashboard with P&L, market value, volatility (σ), and a risk exposure bar chart
+- Renders a live-updating terminal dashboard with P&L, market value, volatility (σ) and a risk exposure bar chart
 - Shuts down cleanly on Ctrl+C
 
 ## Running it
@@ -60,7 +62,7 @@ Run these yourself and fill in the real numbers - that's the point.
 | **Docker image size** | `docker images risk-monitor-go`       | `docker images risk-monitor-java`             |
 | **Lines of code**     | `find go -name '*.go' \| xargs wc -l` | `find java/src -name '*.java' \| xargs wc -l` |
 
-Expected results (approximate):
+Expected results (approx):
 
 | Metric        | Go   | Java       |
 | ------------- | ---- | ---------- |
